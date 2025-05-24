@@ -1,0 +1,231 @@
+.pag-1 {
+  background-image: url("../public/images/background-jornal.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.pag-2 {
+  background-color: #ffffcc;
+  margin: 0 auto;
+}
+
+.pag-3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  background-color: #fff01d;
+  height: 100vh;
+  width: 100%;
+  color: black;
+}
+.pag-4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  background-color: #ffd700;
+  height: 100vh;
+  width: 100%;
+  color: black;
+}
+.pag-5 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  background-color: #ffa500;
+  height: 100vh;
+  width: 100%;
+  color: black;
+}
+.pag-6 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  background-color: #800000;
+  height: 100vh;
+  width: 100%;
+  color: black;
+}
+
+.btn-style {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  color: black;
+  transition: 0.5s;
+}
+
+.btn-style:hover {
+  scale: 1.05;
+  transition: 0.5s;
+  border: 1px solid black;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 0 0;
+}
+
+.container-label {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto;
+  text-align: justify;
+  font-size: 2rem;
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.ms-item {
+  height: 100dvh;
+}
+
+.container-label input {
+  margin: 20px;
+  transform: scale(2);
+}
+
+h1 {
+  color: black;
+  font-family: "Libre Baskerville", serif;
+}
+
+h2 {
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.3rem;
+}
+
+h3 {
+  color: black;
+}
+
+.title {
+  animation: appear ease 3s;
+  opacity: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  animation: appear ease 4s;
+  opacity: 0;
+}
+
+.container-text-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+  60% {
+    opacity: 100%;
+    scale: 1.1;
+  }
+  100% {
+    opacity: 0%;
+    scale: 0;
+  }
+}
+
+.react-marquee {
+  animation: opacit 7s ease;
+}
+
+@keyframes opacit {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.body-cases {
+  display: flex;
+  align-items: center;
+}
+
+.body-cases div {
+  margin: 0px 100px;
+}
+
+.container-information {
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  width: 6%;
+  font-size: 0.5rem;
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.main-title-pg2 {
+  display: flex;
+  padding: 0px 0px 0 0px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.main-title-pg3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+label {
+  cursor: pointer;
+}
+
+.vertical-timeline {
+  z-index: 1;
+}
+
+.subtitle-cases {
+  width: 50%;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  animation: subtitleopt 10s ease infinite;
+}
+
+@keyframes subtitleopt {
+  10% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
