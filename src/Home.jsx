@@ -18,9 +18,12 @@ function Home() {
   const page4Ref = useRef(null);
   const page5Ref = useRef(null);
   const page6Ref = useRef(null);
+  const page7Ref = useRef(null);
   const [checkedScroll1, setCheckedScroll1] = useState(false);
   const [checkedScroll2, setCheckedScroll2] = useState(false);
   const [checkedScroll3, setCheckedScroll3] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
+  const [showRedThermometer, setShowRedThermometer] = useState(false);
 
   useEffect(() => {
     Aos.init();
@@ -335,42 +338,60 @@ function Home() {
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Seu parceiro te critica ou humilha na frente de outras pessoas,
                 mesmo que de forma “brincalhona” ou sutil?
               </label>
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Ele/a já fez comentários que diminuem sua autoestima ou seu
                 valor?
               </label>
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Alguma vez ele/a já te isolou de amigos ou familiares, dizendo
                 que “eles não são bons para você”?
               </label>
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Seu parceiro já pediu para que você não saia com certas pessoas
                 ou em determinados horários?
               </label>
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Ele/a já tentou controlar suas redes sociais ou pediu suas
                 senhas?
               </label>
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Seu parceiro já tentou controlar o que você veste ou como se
                 comporta?
               </label>
@@ -408,49 +429,70 @@ function Home() {
           <div className="pag-4">
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Alguma vez ele/a já te xingou ou falou palavrões quando estavam
                 sozinhos?
               </label>
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Você já sentiu medo de discutir ou expressar sua opinião para
                 ele/a?
               </label>
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Seu parceiro já tentou manipular você usando chantagens
                 emocionais (ex: “Se você me deixar, eu não aguento viver”)?
               </label>
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Ele/a já fez ameaças verbais, mesmo que vagas, do tipo “você vai
                 se arrepender” ou “vai ver só”?
               </label>
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Alguma vez ele/a já destruiu ou quebrou seus pertences durante
                 uma briga?
               </label>
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Ele/a já te impediu de trabalhar, estudar ou ter seu próprio
                 dinheiro?
               </label>
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Seu parceiro já controlou seu telefone, ligou ou mandou
                 mensagens sem parar para saber onde você estava?
               </label>
@@ -498,48 +540,69 @@ function Home() {
           <div className="pag-5">
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Alguma vez ele/a já usou a força para segurar você contra sua
                 vontade ou empurrou você?
               </label>
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Ele/a já te perseguiu, apareceu de surpresa no seu trabalho,
                 escola ou casa para te controlar?
               </label>
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Seu parceiro já invadiu sua casa ou seu espaço pessoal sem sua
                 permissão?
               </label>
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Ele/a já te ameaçou com objetos, como facas, paus ou outros
                 instrumentos?
               </label>
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Você já foi agredida fisicamente, com socos, tapas ou chutes?
               </label>
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Alguma vez você precisou de atendimento médico por causa de
                 agressões dele/a?
               </label>
             </div>
             <div className="container-label">
               <label>
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={(e) => setIsChecked(e.target.checked)}
+                />
                 Seu parceiro já fez ameaças explícitas de morte contra você?
               </label>
             </div>
@@ -551,6 +614,7 @@ function Home() {
                   onChange={(e) => {
                     const isChecked = e.target.checked;
                     setCheckedScroll3(isChecked);
+                    setIsChecked(e.target.checked);
                     if (isChecked) {
                       page6Ref.current?.scrollIntoView({
                         behavior: "smooth",
@@ -584,13 +648,19 @@ function Home() {
         <div ref={page6Ref} className="pag-6">
           <div className="container-label" style={{ color: "#fff" }}>
             <label>
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                onChange={(e) => setIsChecked(e.target.checked)}
+              />
               Alguma vez ele/a falou que “vai acabar com você” ou “te matar”?
             </label>
           </div>
           <div className="container-label" style={{ color: "#fff" }}>
             <label>
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                onChange={(e) => setIsChecked(e.target.checked)}
+              />
               Você sente que sua vida está em risco por causa do comportamento
               dele/a?
             </label>
@@ -604,15 +674,25 @@ function Home() {
               >
                 Retornar questões
               </button>
-              <button className="btn-style" style={{ color: "#fff" }}>
+              <button
+                className="btn-style"
+                style={{ color: "#fff" }}
+                onClick={(e) => {
+                  page7Ref.current?.scrollIntoView({ behavior: "smooth" });
+                  setShowRedThermometer(isChecked);
+                }}
+              >
                 VEJA O RESULTADO
               </button>
             </div>
           </div>
         </div>
-        <div style={{ color: "#fff", backgroundColor: "#fff" }}>
-          <div className="container-label"></div>
-        </div>
+        <div
+          ref={page7Ref}
+          className={
+            showRedThermometer ? "termometroVermelho" : "termometroVerde"
+          }
+        ></div>
       </MegaScroll>
     </>
   );

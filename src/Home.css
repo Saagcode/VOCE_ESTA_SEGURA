@@ -229,3 +229,20 @@ label {
     opacity: 100%;
   }
 }
+
+.termometroVerde {
+  background-color: #fff;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../public/images/conteudo_VERDE.png");
+  background-repeat: no-repeat;
+  animation: subtitleopt 10s ease infinite;
+}
+.termometroVermelho {
+  background-color: #fff;
+  background-image: url("../public/images/conteudo_VERMELHA.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: subtitleopt 2s ease infinite;
+}
