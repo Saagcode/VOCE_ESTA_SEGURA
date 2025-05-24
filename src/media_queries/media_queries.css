@@ -66,21 +66,21 @@
     font-size: 1rem;
   }
   h3 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   h4 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   p {
-    font-size: 0.4rem;
+    font-size: 1rem;
   }
   .vertical-timeline {
-    scale: 0.7;
-    font-size: 0.75rem;
-    margin-top: -340px;
+    scale: 0.8;
+    font-size: 1rem;
+    margin-top: -250px;
   }
   .container-label {
-    font-size: 1rem;
+    font-size: 0.7rem;
     width: 80%;
     margin: 8px auto;
   }

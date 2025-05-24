@@ -288,9 +288,11 @@ function Home() {
               </h4>
               <p>
                 Tatiane Spitzner foi morta pelo marido, o advogado Luís Felipe
-                Manvailer, em 2018, em Guarapuava (PR). O caso impulsionou
-                discussões sobre a efetividade da Lei Maria da Penha e a
-                importância de medidas protetivas rápidas e eficazes.
+                Manvailer, em 2018, em Guarapuava (PR). O crime teve grande
+                repercussão, pois imagens das agressões foram divulgadas
+                publicamente. O caso impulsionou discussões sobre a efetividade
+                da Lei Maria da Penha e a importância de medidas protetivas
+                rápidas e eficazes.
               </p>
             </VerticalTimelineElement>
           </VerticalTimeline>
@@ -402,7 +404,6 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="pag-3"></div>
         <div ref={page4Ref}>
           <div className="pag-4">
             <div className="container-label">
@@ -493,7 +494,6 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="pag-4"></div>
         <div ref={page5Ref}>
           <div className="pag-5">
             <div className="container-label">
@@ -581,7 +581,6 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="pag-5"></div>
         <div ref={page6Ref} className="pag-6">
           <div className="container-label" style={{ color: "#fff" }}>
             <label>
